@@ -1,4 +1,5 @@
 let isIgnite = true
+let isMengo = true
 
 function changeCard(event){
     
@@ -7,7 +8,7 @@ function changeCard(event){
     isIgnite = !isIgnite
     card.style.backgroundImage = backgroundImage
 }
-let isMengo = true
+
 
 function changeCard2(event){
     
