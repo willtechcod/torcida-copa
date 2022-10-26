@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body * {
+    font-family: 'Roboto';
+}
+
+body {
+    background: linear-gradient(150deg, #0f2b05, #000000);
+    height: 100vh;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+header {
+    
+    padding: 18px 0;
+}
+
+.card {
+    width: 354px;
+    height: 508px;
+    display: inline-block;
+    cursor: pointer;
+    opacity: 0;
+    
+
+    transform: translateY(-112px);
+    animation: slider 1.4s forwards;
+
+    user-select: none;
+    -webkit-user-select: none;
+
+    background-image: url(./assets/bg-card.svg);
+}
+.card2 {
+    width: 354px;
+    height: 508px;
+    display: inline-block;
+    cursor: pointer;
+    opacity: 0;
+
+    transform: translateY(-112px);
+    animation: slider 1.8s forwards;
+
+    user-select: none;
+    -webkit-user-select: none;
+
+    background-image: url(./assets/bg-card-preto.svg);
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+
+
+.card > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    object-fit: cover;
+    border: 4px solid #F7DD43;
+    margin-top: 115px;
+
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+.card2 > img {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+    object-fit: cover;
+    border: 4px solid #FFFFFF;
+    margin-top: 115px;
+
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+body p {
+    margin-left: 6px;
+    color: #F7DD43;
+    font-size: 12px;
+}
+
+ a {
+    font-size: 14px;
+    margin-left: 6px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+@keyframes slider {
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
